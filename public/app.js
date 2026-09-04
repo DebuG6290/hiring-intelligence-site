@@ -1,3 +1,4 @@
+const favicon = document.createElement('link'); favicon.rel = 'icon'; favicon.type = 'image/svg+xml'; favicon.href = './favicon.svg'; document.head.appendChild(favicon);
 const nav = document.querySelector('.nav'); const menu = document.querySelector('.menu'); const links = document.querySelector('#navlinks');
 addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 30), { passive: true });
 menu.addEventListener('click', () => { const open = links.classList.toggle('open'); menu.setAttribute('aria-expanded', open); });
